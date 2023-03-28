@@ -1,0 +1,313 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import "./antd-supplement.scss"; */
+
+/** Define the different themes here 
+  * Refer to https://tailwindcss.com/blog/tailwindcss-v3-1#easier-css-variable-color-configuration
+  */
+
+@layer base {
+  [data-theme="light"] {
+    --theme-color-text-secondary: rgba(0, 0, 0, 0.45);
+
+    --theme-color-bg-green: #05cc49;
+  }
+}
+
+body {
+  color: #365272;
+}
+
+
+.content {
+  position: relative;
+  border-radius: 32px;
+
+  .frame {
+    position: absolute;
+    margin-top: 96px;
+    margin-left: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 48.14516129032258%;
+
+    .font {
+      width: 100%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 120%;
+      color: #365272;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+}
+
+
+.content-mask {
+  overflow: hidden;
+  position: relative;
+  border-radius: 32px;
+  z-index: 1;
+
+
+  &::before {
+
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 82, 114, 0.3);
+    z-index: -1;
+    opacity: 0.9;
+
+  }
+
+}
+
+
+.frame10 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 312px;
+  height: 112px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.font1 {
+  width: 312px;
+  height: 48px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #365272;
+  opacity: 0.8;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  width: 175px;
+  height: 40px;
+  border: 1px solid #365272;
+  filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.043));
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.buttonFont {
+  width: 143px;
+  height: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #365272;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+
+.frame2 {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 46.45161290322581%;
+
+  .font {
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 120%;
+    color: #F9F9F9;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    width: 205px;
+    height: 40px;
+    background: #F28B13;
+    box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25), 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    .buttonFont {
+      width: 173px;
+      height: 24px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+}
+
+.frame3 {
+  position: absolute;
+  margin-top: 96px;
+  margin-left: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 54.2741935483871%;
+
+  .font {
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 120%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .frame10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 312px;
+    height: 88px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    .font1 {
+      width: 312px;
+      height: 24px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      color: #FFFFFF;
+      opacity: 0.8;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    width: 92px;
+    height: 40px;
+    background: #F28B13;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    .buttonFont {
+      width: 60px;
+      height: 24px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+}
+
+.child {
+  width: 184px;
+  height: 17.89px;
+  // background-color: red;
+  /* Center horizontally*/
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 27.82px;
+  z-index: 1;
+
+}
+
+.dotbtn {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgba(248, 248, 248, 0.9);
+}
+
+.dotbtn-active {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background: rgba(248, 248, 248, 0.9);
+}
